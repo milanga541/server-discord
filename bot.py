@@ -15,11 +15,11 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
-    if message.content.startswith('$hola'):
+    if message.content.startswith('$buen dia'):
         await message.channel.send("hola")
     elif message.content.startswith('$emoji'):
         await message.channel.send("\U0001f642")
-    elif message.content.startswith('$chau'):
+    elif message.content.startswith('$me despido'):
             await message.channel.send("chau")
     else:
         await message.channel.send(message.content)
